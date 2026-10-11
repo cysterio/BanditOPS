@@ -146,32 +146,58 @@ Additional plots from the repository include `real_data_cumulative_intercepts.pn
 
 ## Repository Structure
 
+## Repository Structure
+
 ```text
 BanditOPS/
-├── belief.py                       # Belief-state tracking
-├── env.py                          # Spectrum simulation environment
-├── policies.py                     # Scheduling policies
-├── whittle.py                      # Whittle Index computation
-├── metrics.py                      # Performance metrics
-├── tsrd_adapter.py                 # TSRD data adapter
-├── aggregate_transitions.py        # Transition aggregation
-├── sanitize_transitions.py         # Transition sanitization
-├── download_data.py                # Dataset download utilities
-├── inspect_data.py                 # Dataset inspection
-├── inspect_metadata.py             # Metadata inspection
-├── run_experiment.py               # Synthetic policy comparison
-├── real_data_experiment.py         # Real-data experiments
-├── presentation_demo.py             # Demonstration script
-├── aggregated_transitions.json     # Aggregated transition data
-├── aggregated_transitions.npz      # NumPy transition archive
-├── env_ready_transitions.json      # Sanitized transition data
-├── env_ready_transitions.npz       # Environment-ready archive
-├── cumulative_intercepts.png       # Synthetic results plot
-├── intercept_rate_bar.png          # Synthetic comparison plot
-├── real_data_cumulative_intercepts.png
-├── real_data_intercept_rate_bar.png
-└── metadata_output.txt
+├── README.md
+├── .gitignore
+├── requirements.txt
+│
+├── src/
+│   ├── belief.py
+│   ├── env.py
+│   ├── policies.py
+│   ├── whittle.py
+│   ├── metrics.py
+│   ├── tsrd_adapter.py
+│   ├── aggregate_transitions.py
+│   └── sanitize_transitions.py
+│
+├── scripts/
+│   ├── run_experiment.py
+│   ├── real_data_experiment.py
+│   ├── presentation_demo.py
+│   ├── download_data.py
+│   ├── inspect_data.py
+│   └── inspect_metadata.py
+│
+├── data/
+│   ├── aggregated_transitions.json
+│   ├── aggregated_transitions.npz
+│   ├── env_ready_transitions.json
+│   └── env_ready_transitions.npz
+│
+└── results/
+    ├── cumulative_intercepts.png
+    ├── intercept_rate_bar.png
+    ├── real_data_cumulative_intercepts.png
+    ├── real_data_intercept_rate_bar.png
+    └── metadata_output.txt
 ```
+
+### Directory Overview
+
+| Directory / File | Purpose |
+|---|---|
+| `src/` | Core scheduling algorithms, belief tracking, simulation environment, and data processing |
+| `scripts/` | Experiment execution, demonstrations, and dataset utilities |
+| `data/` | Processed transition data and cached NumPy archives |
+| `results/` | Evaluation plots, metrics outputs, and experiment artifacts |
+| `README.md` | Project overview, setup instructions, and documentation |
+| `requirements.txt` | Python dependencies |
+| `.gitignore` | Excludes local files, secrets, and generated artifacts that should not be committed |
+
 
 ## Getting Started
 
