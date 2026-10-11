@@ -130,13 +130,13 @@ The repository also includes real-data experiment scripts and evaluation plots b
 
 **Cumulative Interceptions**
 
-![Cumulative interceptions](cumulative_intercepts.png)
+![Cumulative interceptions](results/cumulative_intercepts.png)
 
 Compares cumulative interception performance across scheduling policies.
 
 **Interception Rate Comparison**
 
-![Interception rate comparison](intercept_rate_bar.png)
+![Interception rate comparison](results/intercept_rate_bar.png)
 
 Compares the final interception rate of the evaluated policies.
 
