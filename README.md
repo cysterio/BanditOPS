@@ -268,14 +268,6 @@ The underlying adaptive scheduling approach may also be relevant to:
 - Resource allocation in systems with limited sensing capacity.
 - Other sequential decision-making problems involving changing environments.
 
-## Team
-
-**BanditOps — Smart India Hackathon 2026**
-
-- Team ID: T005
-- Problem Statement: 26055
-- Theme: Robotics and Drones
-
 ## References
 
 1. Gunn et al., *The Turing Synthetic Radar Dataset: A Dataset for Pulse Deinterleaving*, arXiv:2602.03856, 2026.
